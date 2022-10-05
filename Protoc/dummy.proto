@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+package Dummy;
+
+option go_package = "grpc_dummy/Generate/Protoc";
+
+message DummyRequest{
+}
+
+message DummyResponse{
+    string dummyString = 1;
+}
+
+service DummyService{
+    rpc Dummy(DummyRequest) returns (DummyResponse);
+}
