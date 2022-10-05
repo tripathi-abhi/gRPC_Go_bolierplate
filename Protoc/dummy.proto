@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package Dummy;
 
-option go_package = "grpc_dummy/Generate/Protoc";
+option go_package = "grpc_dummy/Protoc";
 
 message DummyRequest{
 }
